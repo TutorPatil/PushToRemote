@@ -68,4 +68,35 @@ public class Login extends BaseClass{
 		closeDriver();
 	}
 
+	
+	public static void login_003() throws IOException
+	{
+		try{
+			writeLogs(" Starting the test case Login_002");
+			launchApplication();	
+			CommonUtils.loginToActiTimeApplication("admin123", "manager12");
+			
+			boolean result = driver.findElement(By.xpath(getLocatoDataFromExcel("LoginPage", "ErrorMessageText"))).isDisplayed();
+			
+			writeLogs(" Error message is seen now ending the login 002 test case");
+			
+			if(result)			
+				writeResults("Login_002", "Pass");			
+			else			
+			{
+				writeResults("Login_002", "Fail");
+				captureScreenShotOnFailure("Login_002");
+			}			
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+			writeResults("Login_002", "Fail");
+			captureScreenShotOnFailure("Login_002");
+		}
+		
+		closeDriver();
+	}
+
+	
 }
