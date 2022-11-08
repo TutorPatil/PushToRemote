@@ -1,0 +1,30 @@
+ Starting the test case Login_001
+ The actitime login is false
+Login_001----Fail
+ Starting the test case Login_002
+ Error message is seen now ending the login 002 test case
+Login_002----Pass
+ Starting the test case Login_001
+ The actitime login is false
+Login_001----Fail
+ Starting the test case Login_002
+ Error message is seen now ending the login 002 test case
+Login_002----Pass
+ Starting the test case Login_001
+ Starting the test case Login_001
+ Starting the test case Login_001
+ Starting the test case Login_001
+ Starting the test case Login_001
+ Starting the test case Login_001
+ Starting the test case Login_001
+ The actitime login is false
+Login_001----Fail
+ Starting the test case Login_001
+ The actitime login is true
+Login_001----Pass
+ Starting the test case Login_001
+ The actitime login is true
+Login_001----Pass
+ Starting the test case Login_001
+ The actitime login is true
+Login_001----Pass
